@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avi - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6a1290a50c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/myLogo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Developer</p>
+          <h1>Hi, I'm <span>Avi</span><br />from India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profile2.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello! I'm Avinash Kumar, a passionate and versatile web developer
+              and data enthusiast. As a BTech CSE student with hands-on
+              experience in the MERN stack, I've developed dynamic web
+              applications that address real-world challenges. My skills in
+              MongoDB, Express.js, React.js, and Node.js enable me to create
+              scalable and efficient web solutions.
+            </p>
+            <br />
+            <p>
+              In parallel, my experience as a Data Analyst has honed my ability
+              to transform raw data into actionable insights. Through projects
+              involving SQL, Excel and Power BI, I've delivered insights that
+              contribute to informed decision-making and business optimization.
+            </p>
+            <br />
+            <p>
+              Driven by a strong desire to continuously learn and take on new
+              challenges, I'm eager to apply my skills in both web development
+              and data analytics. Whether it's building the next big web app or
+              uncovering hidden patterns in data, I'm excited to collaborate
+              with like-minded professionals and organizations. Let's connect
+              and create something remarkable together!
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />
+                  HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB
+                </li>
+                <li>
+                  <span>Data Analytics</span><br />SQL, Excel, Power BI, MySQL
+                </li>
+                <li>
+                  <span>Core Computer Science</span><br />Computer Networks,
+                  Operating Systems, DBMS
+                </li>
+                <li>
+                  <span>Programming Languages</span><br />
+                  C, C++, Python
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Sept 2024 - Oct 2024</span><br />Full-Stack Web
+                  Developer Intern at Uniconn
+                </li>
+                <li>
+                  <span>May 2024 - June 2024</span><br />Data Analyst Intern at
+                  Mentorness
+                </li>
+                <li>
+                  <span>Sept 2023 - Oct 2023</span><br />Led a 6-member team in
+                  Smart India Hackathon (SIH 2023) at VIIT
+                </li>
+                <li>
+                  <span>May 2023 - Aug 2023</span><br />Data Analytics Intern at
+                  Trainity
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2025</span><br />B.Tech in CSE | Vignan's Institute of
+                  Information Technology
+                </li>
+                <li>
+                  <span>2021</span><br />Intermediate | Sri Chaitanya Junior
+                  College
+                </li>
+                <li>
+                  <span>2019</span><br />Class X | SSC | Chaitanya EM School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Web Design</h2>
+            <p>
+              I create visually appealing and user-friendly websites that are
+              optimized for performance, accessibility, and responsiveness
+              across all devices.
+            </p>
+            <a href="https://linkedin.com/in/avinashkumarpithani">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Development</h2>
+            <p>
+              From front-end interfaces to back-end systems, I build scalable
+              web applications using modern technologies and best practices.
+            </p>
+            <a href="https://linkedin.com/in/avinashkumarpithani">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>Data Analytics</h2>
+            <p>
+              I help turn raw data into actionable insights through data
+              visualization, statistical analysis, and custom reporting
+              solutions.
+            </p>
+            <a href="https://linkedin.com/in/avinashkumarpithani">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/mernbg.png" alt="" />
+            <div class="layer">
+              <h3>SwapCharGo</h3>
+              <p>
+                Developed a full-stack web application which streamlines EV
+                battery charging and battery swapping services (BCS & BSS)
+              </p>
+              <a href="https://github.com/AvinashKumarPithani/SwapCharGo9"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>iSmart (Ecommerce Website)</h3>
+              <p>
+                Developed a responsive and user-friendly online shopping website
+                frontend using HTML, CSS, and JavaScript
+              </p>
+              <a href="https://github.com/AvinashKumarPithani/onlineShopping"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/dabg.png" alt="" />
+            <div class="layer">
+              <h3>Cost of Living Analysis</h3>
+              <p>
+                Developed an interactive dashboard for regional cost variations
+                using Power BI
+              </p>
+              <a
+                href="https://www.linkedin.com/posts/avinashkumarpithani_cost-of-living-analysis-activity-7201808142559567873-g5A-?utm_source=share&utm_medium=member_android"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              avinashkumar.pithani@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> 7416149814</p>
+            <div class="social-icons">
+              <a href="https://linkedin.com/in/avinashkumarpithani"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/AvinashKumarPithani/"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              <a href=""></a>
+            </div>
+            <a href="images/Resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Avi. Personal Portfolio
+          <i class="fa-solid fa-briefcase"></i>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyPU8g99BCCOz5hLuS6H1hNdGK9_jqv1xv5x_T7bCCkta0whUPW3jstzZBbloUW9nOnbw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
